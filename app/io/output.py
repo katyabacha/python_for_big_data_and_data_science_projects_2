@@ -1,7 +1,9 @@
+import pandas as pd
+
+
 def output_text_console(text):
-    print("Output text: ", text)
+    pass
 
 
 def write_file_builtin(text, file_path):
-    with open(file_path, 'w') as file:
-        file.write(text)
+    pass
