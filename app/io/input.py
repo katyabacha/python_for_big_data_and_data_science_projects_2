@@ -22,9 +22,12 @@ def read_file_builtin(file_path):
         Returns:
             str: The content of the file.
     """
-    with open(file_path, 'r') as file:
-        text = file.read()
-    return text
+    try:
+        with open(file_path, 'r') as file:
+            text = file.read()
+        return text
+    except FileNotFoundError:
+        print("File not found")
 
 
 def read_file_pandas(file_path):
